@@ -1,0 +1,17 @@
+#spree-header {
+  background: #d3d3d3;
+}
+
+#spree-header #header {
+  background: #FFD80C;
+}
+
+
+#logo {
+  width:200px;
+  height: 200px;
+}
+
+.panel-footer {
+  background-color: #FFD80C;
+}
