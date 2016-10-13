@@ -17,7 +17,7 @@ https://github.com/spree/spree
 ##This app also uses [Mailcatcher](https://mailcatcher.me/)
 
 ```ruby
-    gem install mailcatcher
+gem install mailcatcher
 ```
 follow the documentation: https://github.com/sj26/mailcatcher
 
