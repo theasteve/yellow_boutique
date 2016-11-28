@@ -1,17 +1,31 @@
 #spree-header {
-  background: #d3d3d3;
+  background: #11252b;
 }
 
+
+
 #spree-header #header {
-  background: #FFD80C;
+  background: white;
 }
 
 
 #logo {
   width:200px;
-  height: 200px;
+  height: 70px;
 }
 
 .panel-footer {
-  background-color: #FFD80C;
+  background-color: #11252b;
+}
+
+body{
+  color: white;
+}
+
+.taxonomy-root {
+  color: black;
+}
+
+#spree-header .nav a {
+  color: #5e6e85;
 }

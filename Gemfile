@@ -28,6 +28,11 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
+#Image-magik
+gem 'imagemagick-identify', '~> 0.0.1'
+
+gem 'rmagick'
 #spree gem
 gem 'spree', github: 'spree/spree'
 
@@ -36,6 +41,8 @@ gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: 'master'
 gem 'spree_gateway', github: 'spree/spree_gateway'
 
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
+
+gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -7,7 +7,8 @@
 
  *= require_self
  *= require_tree .
+ *= require spree/frontend/spree_static_content
 */
 #header {
-  background-color: #ffff00;
+  background-color: white;
 }

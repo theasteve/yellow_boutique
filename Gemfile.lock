@@ -6,8 +6,15 @@ GIT
       spree_backend (>= 3.1.0, < 4.0)
 
 GIT
+  remote: git://github.com/spree-contrib/spree_static_content.git
+  revision: 818c9ecb65df2e845a40ca8d2053b2c7be2a2d75
+  specs:
+    spree_static_content (3.2.0.alpha)
+      spree_core (>= 3.1.0, < 4.0)
+
+GIT
   remote: git://github.com/spree/spree.git
-  revision: 2106b7d91a55d70fed041eaba5298059db1b0fb2
+  revision: 6311f9bc4579e94f5478d6ac38069eed3ea50799
   specs:
     spree (3.2.0.beta1)
       spree_api (= 3.2.0.beta1)
@@ -17,7 +24,7 @@ GIT
       spree_frontend (= 3.2.0.beta1)
       spree_sample (= 3.2.0.beta1)
     spree_api (3.2.0.beta1)
-      rabl (~> 0.13.0)
+      rabl (~> 0.13.1)
       spree_core (= 3.2.0.beta1)
       versioncake (~> 3.1.0)
     spree_backend (3.2.0.beta1)
@@ -30,13 +37,13 @@ GIT
     spree_cmd (3.2.0.beta1)
       thor (~> 0.14)
     spree_core (3.2.0.beta1)
-      activemerchant (~> 1.49)
+      activemerchant (~> 1.59)
       acts-as-taggable-on (~> 4.0)
-      acts_as_list (~> 0.7.4)
+      acts_as_list (~> 0.8)
       awesome_nested_set (~> 3.1.1)
       cancancan (~> 1.10.1)
       carmen (~> 1.0.0)
-      deface (~> 1.0.0)
+      deface (~> 1.0)
       ffaker (~> 2.2.0)
       font-awesome-rails (~> 4.0)
       friendly_id (~> 5.1.0)
@@ -64,20 +71,20 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree_auth_devise.git
-  revision: 56f3fe203c141c1edb75667eba0455cf931cfffa
+  revision: 9466e9a58914775251df00bc811a2cbb7e7859d8
   branch: master
   specs:
-    spree_auth_devise (3.2.0.alpha)
+    spree_auth_devise (3.2.0.beta)
       devise (~> 4.0.0)
       devise-encryptable (= 0.1.2)
       spree_core (>= 3.1.0, < 4.0)
 
 GIT
   remote: git://github.com/spree/spree_gateway.git
-  revision: 772fe18f90b4785860a0a7988d3419534fba5c3e
+  revision: 5de49f0ed535140d34cde4ded4ac1cba7e535cdb
   specs:
-    spree_gateway (3.1.0)
-      spree_core (~> 3.2.0.alpha)
+    spree_gateway (3.2.0.beta)
+      spree_core (>= 3.1.0, < 4.0)
 
 GEM
   remote: https://rubygems.org/
@@ -108,7 +115,7 @@ GEM
     activejob (5.0.0.1)
       activesupport (= 5.0.0.1)
       globalid (>= 0.3.6)
-    activemerchant (1.60.0)
+    activemerchant (1.61.0)
       activesupport (>= 3.2.14, < 5.1)
       builder (>= 2.1.2, < 4.0.0)
       i18n (>= 0.6.9)
@@ -126,11 +133,12 @@ GEM
       tzinfo (~> 1.1)
     acts-as-taggable-on (4.0.0)
       activerecord (>= 4.0)
-    acts_as_list (0.7.7)
+    acts_as_list (0.8.2)
       activerecord (>= 3.0)
-    addressable (2.4.0)
-    arel (7.1.2)
-    autoprefixer-rails (6.5.0)
+    addressable (2.5.0)
+      public_suffix (~> 2.0, >= 2.0.2)
+    arel (7.1.4)
+    autoprefixer-rails (6.5.3)
       execjs
     awesome_nested_set (3.1.1)
       activerecord (>= 4.0.0, < 5.1)
@@ -139,7 +147,7 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     builder (3.2.2)
-    byebug (9.0.5)
+    byebug (9.0.6)
     camertron-eprun (1.1.1)
     cancancan (1.10.1)
     canonical-rails (0.1.1)
@@ -160,7 +168,7 @@ GEM
     coffee-script-source (1.10.0)
     colorize (0.8.1)
     concurrent-ruby (1.0.2)
-    css_parser (1.4.5)
+    css_parser (1.4.6)
       addressable
     debug_inspector (0.0.2)
     deface (1.0.2)
@@ -180,7 +188,7 @@ GEM
     execjs (2.7.0)
     ffaker (2.2.0)
     ffi (1.9.14)
-    font-awesome-rails (4.6.3.1)
+    font-awesome-rails (4.7.0.0)
       railties (>= 3.2, < 5.1)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
@@ -189,6 +197,7 @@ GEM
     highline (1.6.21)
     htmlentities (4.3.4)
     i18n (0.7.0)
+    imagemagick-identify (0.0.1)
     jbuilder (2.6.0)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
@@ -222,9 +231,8 @@ GEM
       sixarm_ruby_unaccent (>= 1.1.1, < 2)
     multi_json (1.12.1)
     nio4r (1.2.1)
-    nokogiri (1.6.8)
+    nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
     orm_adapter (0.5.0)
     paperclip (4.3.7)
       activemodel (>= 3.2.0)
@@ -232,9 +240,8 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (= 0.3.0)
-    paranoia (2.2.0.pre)
+    paranoia (2.2.0)
       activerecord (>= 4.0, < 5.1)
-    pkg-config (1.1.7)
     polyamorous (1.3.1)
       activerecord (>= 3.0)
     polyglot (0.3.5)
@@ -244,8 +251,9 @@ GEM
     premailer-rails (1.9.4)
       actionmailer (>= 3, < 6)
       premailer (~> 1.7, >= 1.7.9)
+    public_suffix (2.0.4)
     puma (3.6.0)
-    rabl (0.13.0)
+    rabl (0.13.1)
       activesupport (>= 2.3.14)
     rack (2.0.1)
     rack-test (0.6.3)
@@ -280,11 +288,12 @@ GEM
       activesupport (>= 3.0)
       i18n
       polyamorous (~> 1.3)
-    rb-fsevent (0.9.7)
+    rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
+    rmagick (2.16.0)
     sass (3.4.22)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
@@ -295,10 +304,11 @@ GEM
     select2-rails (3.5.9.1)
       thor (~> 0.14)
     sixarm_ruby_unaccent (1.1.1)
-    spring (1.7.2)
-    spring-watcher-listen (2.0.0)
+    spring (2.0.0)
+      activesupport (>= 4.2)
+    spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
-      spring (~> 1.2)
+      spring (>= 1.2, < 3.0)
     sprockets (3.7.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -306,7 +316,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.3.11)
+    sqlite3 (1.3.12)
     state_machines (0.4.0)
     state_machines-activemodel (0.4.0)
       activemodel (>= 4.1, < 5.1)
@@ -321,13 +331,13 @@ GEM
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
     turbolinks-source (5.0.0)
-    twitter_cldr (3.5.0)
+    twitter_cldr (3.6.0)
       camertron-eprun
-      cldr-plurals-runtime-rb (~> 1.0.0)
+      cldr-plurals-runtime-rb (~> 1.0)
       tzinfo
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (3.0.2)
+    uglifier (3.0.3)
       execjs (>= 0.3.0, < 3)
     versioncake (3.1.0)
       actionpack (>= 3.2)
@@ -336,7 +346,7 @@ GEM
       tzinfo
     warden (1.2.6)
       rack (>= 1.0)
-    web-console (3.3.1)
+    web-console (3.4.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
       debug_inspector
@@ -351,16 +361,19 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
+  imagemagick-identify (~> 0.0.1)
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
   puma (~> 3.0)
   rails (~> 5.0.0)
+  rmagick
   sass-rails (~> 5.0)
   spree!
   spree_auth_devise!
   spree_gateway!
   spree_mail_settings!
+  spree_static_content!
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
@@ -370,4 +383,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   1.13.1
+   1.13.6
