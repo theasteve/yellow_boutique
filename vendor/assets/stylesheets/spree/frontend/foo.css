@@ -29,3 +29,19 @@ body{
 #spree-header .nav a {
   color: #5e6e85;
 }
+
+.well {
+  color: black;
+}
+
+b, strong {
+  color: black;
+}
+
+ .table  tfoot  tr  td {
+   color: black;
+ }
+
+ label{
+   color: black;
+ }
