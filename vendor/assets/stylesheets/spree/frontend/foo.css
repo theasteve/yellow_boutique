@@ -19,7 +19,7 @@
 }
 
 body{
-  color: white;
+  color: black;
 }
 
 .taxonomy-root {
@@ -45,3 +45,10 @@ b, strong {
  label{
    color: black;
  }
+
+ .panel-footer {
+     background-color: #11252b;
+     color: white;
+ }
+
+ 
