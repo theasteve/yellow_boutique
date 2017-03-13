@@ -1,6 +1,6 @@
 # Yellow Boutique
 
-![view](/images/yellow_photo.png)
+![view](/vendor/assets/images/Yellow_photo.png)
 
 Yellow Boutique is a ecommerce website built using Spree API.
 
