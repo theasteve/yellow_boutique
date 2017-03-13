@@ -1,5 +1,7 @@
 # Yellow Boutique
 
+![view](/images/yellow_photo.png)
+
 Yellow Boutique is a ecommerce website built using Spree API.
 
 required Rails 5.0.0.1
